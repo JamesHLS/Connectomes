@@ -26,7 +26,7 @@ Additional exploratory notebooks provide [matrix comparisons](connectivity_matri
 
 - Graph analysis: density, clustering, shortest paths, and global efficiency.
 - Statistical modelling: ordinary least squares, AIC/BIC, cross-validation, and multiple-comparison correction.
-- Sparse modelling: LASSO regression and feature selection.
+- Sparse modelling: LASSO regression with nested cross-validation and descriptive feature selection.
 - Python libraries: NumPy, pandas, SciPy, statsmodels, scikit-learn, Matplotlib, seaborn, NetworkX, NiBabel, and Nilearn.
 
 ## Project layout
@@ -37,11 +37,12 @@ data/
   connectomes/               Connectivity matrices for subjects 32-50
 figures/
   functional_connectomes/    Exported functional network figures
-docs/
-  background/               Original project brief and lecture notes
+results/                    LASSO held-out predictions, edge metrics, and summary
 *.ipynb                     Analysis and exploration notebooks
 requirements.txt            Tested dependency versions
 scripts/run_notebooks.py    Execute notebooks in fresh kernels
+scripts/lasso_evaluation.py Fold-local tuning and nested LASSO evaluation
+tests/                      Evaluation and leakage checks
 ```
 
 ## Running the notebooks
@@ -61,4 +62,6 @@ python scripts/run_notebooks.py
 
 To run one analysis, pass its filename, for example `python scripts/run_notebooks.py model_comparison.ipynb`. The LASSO analysis uses up to six worker processes and takes several minutes.
 
-All 12 notebooks were executed successfully in fresh kernels on 9 October 2026. The methods and discussion retain the original report wording, with verified numerical corrections. Separate verification notes identify interpretation and validation limitations, including the original LASSO protocol. See [reproducibility notes](docs/reproducibility.md) and the [execution record](docs/execution_results.json).
+All 12 notebooks were executed successfully in fresh kernels on 9 October 2026. The discussion retains the original report wording where supported, with verified numerical corrections. The LASSO methods and results were updated after correcting its evaluation: scaling and penalty selection now occur inside the training folds, and both models predict the same held-out subjects. Feature-selection plots describe separate full-data refits. See the [LASSO notebook](lasso_connectivity_prediction.ipynb) and [LASSO results](results/lasso_summary.json).
+
+Run the evaluation checks with `python -m unittest discover -s tests -v`.
