@@ -1,0 +1,102 @@
+{
+  "python": "3.13.5",
+  "notebooks": [
+    {
+      "notebook": "connectivity_density_modelling.ipynb",
+      "started_utc": "2026-10-09T12:24:04.752167+00:00",
+      "status": "passed",
+      "executed_cells": 8,
+      "duration_seconds": 6.44,
+      "code_sha256": "c4ea5ea5720d234bd6fa1b59e7d95160367d51b3b7df8d80364d5f6fe31721d9"
+    },
+    {
+      "notebook": "connectivity_matrix_exploration.ipynb",
+      "started_utc": "2026-10-09T12:24:18.168063+00:00",
+      "status": "passed",
+      "executed_cells": 10,
+      "duration_seconds": 3.74,
+      "code_sha256": "5873265ea310c872a60e54f34622a42ff449270a2ecddbe6062ac892f67c5fa8"
+    },
+    {
+      "notebook": "connectivity_network_visualisation.ipynb",
+      "started_utc": "2026-10-09T12:24:21.928568+00:00",
+      "status": "passed",
+      "executed_cells": 6,
+      "duration_seconds": 3.65,
+      "code_sha256": "31a19b34cdf0f60a1b096913f96781b0b1a3c06ee287d4bb569506f30774cd41"
+    },
+    {
+      "notebook": "connectivity_regression.ipynb",
+      "started_utc": "2026-10-09T12:25:00.947893+00:00",
+      "status": "passed",
+      "executed_cells": 10,
+      "duration_seconds": 6.4,
+      "code_sha256": "164d4d69d59b574dc97c0d662576c86c394498cd96edbd7e74bf657daa4ca8a4"
+    },
+    {
+      "notebook": "cross_subject_generalisation.ipynb",
+      "started_utc": "2026-10-09T12:24:11.231945+00:00",
+      "status": "passed",
+      "executed_cells": 10,
+      "duration_seconds": 6.93,
+      "code_sha256": "c77dac8cbac26a682af2de5799e10c7936d0f8b71bc7c8cc6cfcb4d68922ab17"
+    },
+    {
+      "notebook": "functional_connectome_shrinkage.ipynb",
+      "started_utc": "2026-10-09T12:26:14.020749+00:00",
+      "status": "passed",
+      "executed_cells": 4,
+      "duration_seconds": 22.04,
+      "code_sha256": "9590ebacec236be9238544b5d1dccf59e2acaddd007488df85da5dc45e157c14"
+    },
+    {
+      "notebook": "lasso_connectivity_prediction.ipynb",
+      "started_utc": "2026-10-09T12:29:00.282844+00:00",
+      "status": "passed",
+      "executed_cells": 8,
+      "duration_seconds": 323.87,
+      "code_sha256": "50948ff01228af9074462475f3869312e5cd06d2d0720304d91f958cfd86e26d"
+    },
+    {
+      "notebook": "model_comparison.ipynb",
+      "started_utc": "2026-10-09T12:25:39.715036+00:00",
+      "status": "passed",
+      "executed_cells": 15,
+      "duration_seconds": 88.99,
+      "code_sha256": "39868a0cee948a4a44dd9d8ec6e5352980e76a1d436c91a9c8ad5fd29ed80716"
+    },
+    {
+      "notebook": "mri_data_exploration.ipynb",
+      "started_utc": "2026-10-09T12:24:54.462263+00:00",
+      "status": "passed",
+      "executed_cells": 10,
+      "duration_seconds": 6.48,
+      "code_sha256": "461224667c5c53639fb7c16ee9e1cb11cae0622807fc2da031198075f34f1b41"
+    },
+    {
+      "notebook": "multistep_connectivity_model.ipynb",
+      "started_utc": "2026-10-09T12:23:26.547545+00:00",
+      "status": "passed",
+      "duration_seconds": 133.13,
+      "executed_cells": 21,
+      "format_note": "All cells executed successfully; notebook schema upgraded to 4.5 to support cell IDs.",
+      "code_sha256": "d2b6aa09993c50d307ea09f72a63eae4596d0ad8e05ef5cc7839f695d8abb724"
+    },
+    {
+      "notebook": "structural_functional_overlap.ipynb",
+      "started_utc": "2026-10-09T12:24:25.593494+00:00",
+      "status": "passed",
+      "executed_cells": 10,
+      "duration_seconds": 6.3,
+      "code_sha256": "75b17e7b26fc714663c6eaee934d3df402286481e70b62e3f200cb21c665905d"
+    },
+    {
+      "notebook": "structural_graph_analysis.ipynb",
+      "started_utc": "2026-10-09T12:34:54.754035+00:00",
+      "status": "passed",
+      "executed_cells": 10,
+      "duration_seconds": 6.0,
+      "code_sha256": "64d8e5a0b9140d2fd5972691af49e7c895146e75ecac19e2ac286e26e2da638c"
+    }
+  ]
+}
